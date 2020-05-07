@@ -68,8 +68,8 @@ body{
 .project-tile{
   display:flex;
   flex-direction:column; 
-  row-gap:20px;
   align-content:center;
+  margin: 0em 0.5em 0em 0.5em;
 }
 
 .vbtn{
@@ -78,7 +78,7 @@ body{
   border-radius:20px;
   width:30%;
   height:2.5em;
-  margin:auto;
+  margin:0.7em auto auto auto;
   padding:0.5em;
   border:solid 2px black ;
   border-radius:2em;
@@ -94,7 +94,7 @@ body{
 }
 
 .vbtn:hover{
-  scale:1.2;
+  transform:scale(1.2);
 }
 
 .vbtn a{
@@ -145,5 +145,5 @@ footer img{
 }
 
 #links img:hover{
-  scale:1.2;
+ transform:scale(1.2);
 }
