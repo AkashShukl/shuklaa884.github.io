@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Permanent+Marker&display=swap');
+body{
+  margin:0px;
+  display:flex;
+  flex-direction:column;
+}
+#navbar {
+  background-color: #333;
+  overflow: hidden;
+  display:flex;
+  justify-content:flex-end;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+/* Style the links inside the navigation bar */
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size:1.5em;
+}
+
+.link:hover{
+  background: gray;
+}
+
+#welcome-section{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  width:100%;
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+
+}
+
+#name{
+  height:auto;
+  font-size:2em;
+  text-align:center;
+  font-family: 'Leckerli One', cursive;
+}
+
+#proj-cont{
+  text-align:center;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  margin-bottom:0px;
+}
+#proj-cont h1{
+ font-family: 'Leckerli One', cursive;
+  padding:2em;
+  font-size:3em;
+}
+#projects{
+  display:flex;
+  row-gap:20px;
+  column-gap:20px;
+  justify-content:center;
+  padding-bottom:6em;
+  flex-wrap:wrap;
+}
+
+.project-tile{
+  display:flex;
+  flex-direction:column; 
+  row-gap:20px;
+  align-content:center;
+}
+
+.vbtn{
+  display:block;
+  border:solid;
+  border-radius:20px;
+  width:30%;
+  height:2.5em;
+  margin:auto;
+  padding:0.5em;
+  border:solid 2px black ;
+  border-radius:2em;
+  box-sizing: border-box;
+  color:orange;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+  font-weight:300;
+  box-shadow:inset 0 -1em 0 -0.1em rgba(0,0,0,0.5);
+  cursor:pointer;
+  font-size:1.25em;
+}
+
+.vbtn:hover{
+  scale:1.2;
+}
+
+.vbtn a{
+  text-decoration:none;
+  color:white;
+  font-family: 'Leckerli One', cursive;
+}
+
+@media all and (max-width:30em){
+ .vbtn{
+  display:block;
+  margin:0.2em auto;
+ }
+} 
+/*  */
+iframe{
+  max-height:500px;
+  max-width:500px;
+  
+  height:500px;
+  width:400px;
+  
+  margin:0px;
+  padding:0px;
+}
+
+footer{
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  text-align:center;
+}
+
+footer h1{ 
+font-size:2em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+footer img{
+ max-width:6vw;
+ max-height:6vw;
+  
+  min-height:2.3em;
+  min-width:2.3em;
+  
+  height:4em;
+  width:4em;
+  margin:auto 1em ;
+  
+}
+
+#links img:hover{
+  scale:1.2;
+}
